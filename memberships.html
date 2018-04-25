@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	 
+	  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Memberships</title>
+	  <style>
+		  
+	  </style>
+	  <script>
+	  	function nightVision(){
+		  document.body.style.backgroundColor = "grey";
+		  document.body.style.color = "white";
+		  
+			document.getElementById("navid").className = "navbar fixed-top navbar-expand-lg bg-dark navbar-dark";
+		  
+		}
+	  </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
+  <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
+
+	  
+  </head>
+  <body>
+	  <div class="container-fluid">
+<nav class="navbar fixed-top navbar-expand-lg bg-light navbar-light" id="navid">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+		<img src="lazzazlogo.jpg" alt="Placeholder image" width="99" height="1" class="img-fluid navbar-brand rounded-circle">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item "> <a class="nav-link" href="index.php">Home<span class="sr-only"></span></a></li>
+        
+		
+		  <li class="nav-item"> <a class="nav-link" href="aboutus11.html">About us</a> </li>
+	
+		 <li class="nav-item  active"> <a class="nav-link" href="memberships.html">Memberships</a> </li>
+		  <li class="nav-item"> <a class="nav-link" href="ourhourses.html">Our horses</a> </li>
+	 
+<li class="nav-item "> <a class="nav-link" href="contactus11.html"> Contact us </a>
+        
+        </li>
+      </ul>
+      
+<button class="btn btn-outline-success my_popup_open" type="submit">Log in</button> &nbsp 
+		     <div id="my_popup">
+ 
+   <div class="container" style="padding-top:7%;">
+   <div class="row" >
+                <form class="container" action="testlogin.php" method="post" style="color:white;">
+               
+                  <h2>Login </h2><hr> 
+               
+                 <div class="row">
+                  <div class="col-lg-5">
+                        <div class="form-group">
+                                <label for="username" >First Name:</label>
+                                <input type="text" class="form-control" id='username' name='username' maxlength="50" placeholder="Username">
+                        </div>
+                        
+                  </div>
+                  <br>
+                  <div class="col-lg-5">
+                        <div class="form-group">
+                                <label for="password">Password:</label>
+                                <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                        </div>
+                  </div>
+                  <div>
+                  <div class="row">
+                   <div class="col-lg-6">
+                  		<div class="form-group">
+                  			<input type="radio" name="type"   value="admin">Admin</div></div>
+                  		<div class="col-lg-6">
+                  			<div class="form-group">
+								<input type="radio" name="type"  value="user">User</div></div>
+                  </div>
+                  
+                  
+                        	<input type="checkbox" name="checkbox" class="form-control"/>
+								<label >Remember me</label>
+                        </div>
+                 </div>
+                  </br><input type="submit" name="Submit" value="Log in" class="btn btn-info"/><hr>
+       
+ 
+  </div>
+</div>
+ 
+ 
+  </div>
+ 
+ 
+  <script>
+    $(document).ready(function() {
+      $('#my_popup').popup();
+ 
+    });
+  </script>
+		   <script>
+	  	function nightVision(){
+		  document.body.style.backgroundColor = "grey";
+		  document.body.style.color = "darkgrey";
+		  
+			document.getElementById("navid").className = "navbar fixed-top navbar-expand-lg bg-dark navbar-dark";
+		  
+		}
+		function morningVision(){
+		  document.body.style.backgroundColor = "white";
+		  document.body.style.color = "black";
+		  
+			document.getElementById("navid").className = "navbar fixed-top navbar-expand-lg bg-light navbar-light";
+		  
+		}
+	  </script>
+	  <img onClick="nightVision();" src="night.png" class="img-responsive rounded-circle" alt="train" width="30" height="30">
+	<img onClick="morningVision();" src="sun.png" class="img-responsive rounded-circle" alt="train" width="40" height="40">
+      </form>
+		
+  </div>
+</nav>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent1"> <img src="lazzazlogo.jpg" alt="Placeholder image" width="99" height="1" class="img-fluid navbar-brand rounded-circle">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active"> <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a></li>
+        <!--This is a dropdown-->
+        <li class="nav-item"> <a class="nav-link" href="#card2">About us</a></li>
+        <li class="nav-item"> <a class="nav-link" href="#card2">Our Services</a></li>
+        <li class="nav-item"> <a class="nav-link" href="#card2">Memberships</a></li>
+        <li class="nav-item"> <a class="nav-link" href="#card2">Our horses</a></li>
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Contact us </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown2"> <a class="dropdown-item" href="#">FAQs</a> <a class="dropdown-item" href="#">Location</a> <a class="dropdown-item" href="#">Email us</a></div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log in</button>
+      </form>
+    </div>
+  </nav>
+
+  
+  <div class="container-fluid" style="padding-top:6.7%;" id="table">
+   <div class="row" > 
+ 
+    <table class="table" style="text-align: center">
+	
+	<tr style="font-family: serif , font-size: 20px ">
+		<th><h3> Individual Membership </h3></th>
+	    <th><h3> Family Membership </h3></th>
+		<th><h3> Participate in a Racing </h3></th>
+	</tr>
+	
+    <tr>
+		<td style=" padding:0;" > <img src="mem/ind.jpg" width="380px" height="490"> </td>
+		<td style=" padding:0;" > <img src="mem/fam.jpg" width="380px" height="490"> </td>
+		<td style=" padding:0;" > <img src="mem/racing.jpg" width="380px" height="490"> </td>
+	</tr>
+	
+	<tr style="text-align: left">
+		<td> Members can register to train horse riding in a private one-on-one session with our best trainers. There are different of packages available. Members can request a one hour session, one month membership or a year long membership</td>
+		<td> Here at lazzaz stud, families can enjoy private trainings for a whole day. All ages above 5 years can register in this package.There will be up to three trainers with each family.</td>
+		<td> Members can train to participate in national and international racing competitions. Our professional trainers are always available to improve member's level and make sure that they are ready to compete against the best players in the world.</td>
+	</tr>
+	
+    <tr>
+		<td style=" padding:0;" > <button class="btn btn-info" style="width:50%;"> <a href="form.html" style="text-decoration:none; color:white;"> Register</button> </td>
+		<td style=" padding:0;"> <button class="btn btn-info" style="width:50%;"> <a href="form.html" style="text-decoration:none; color:white;"> Register</button> </td>
+		<td style=" padding:0;"> <button class="btn btn-info" style="width:50%;"> <a href="form.html" style="text-decoration:none; color:white;"> Register</button> </td>
+	</tr>
+ 
+  </table>
+  
+  </div>
+</div>
+
+
+<footer style="text-align: center;">
+<hr>
+<a href="https://www.instagram.com/lazzaz_stud/" target="_blank"><img src="insta.png" class="img-responsive rounded-circle" alt="train" width="50" height="50"></a>
+Lazzaz_stud
+  </footer>
+
+	    
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	  </div>
+</body>
+</html>
+

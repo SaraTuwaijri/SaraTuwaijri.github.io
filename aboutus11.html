@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	 
+	  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About us</title>
+	  <style>
+		  
+	  </style>
+	  <script>
+	  	function nightVision(){
+		  document.body.style.backgroundColor = "grey";
+		  document.body.style.color = "white";
+		  
+			document.getElementById("navid").className = "navbar fixed-top navbar-expand-lg bg-dark navbar-dark";
+		  
+		}
+	  </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
+  <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
+
+	  
+  </head>
+  <body style="padding-top: 7%">
+	  <div class="container-fluid">
+<nav class="navbar fixed-top navbar-expand-lg bg-light navbar-light" id="navid">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+		<img src="lazzazlogo.jpg" alt="Placeholder image" width="99" height="1" class="img-fluid navbar-brand rounded-circle">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item "> <a class="nav-link" href="index.php">Home<span class="sr-only"></span></a></li>
+        
+		
+		  <li class="nav-item active"> <a class="nav-link" href="aboutus11.html">About us</a> </li>
+	
+		 <li class="nav-item"> <a class="nav-link" href="memberships.html">Memberships</a> </li>
+		  <li class="nav-item"> <a class="nav-link" href="ourhourses.html">Our horses</a> </li>
+	 
+<li class="nav-item "> <a class="nav-link" href="contactus11.html"> Contact us </a>
+        
+        </li>
+      </ul>
+      
+<button class="btn btn-outline-success my_popup_open" type="submit">Log in</button> &nbsp 
+		     <div id="my_popup">
+ 
+   <div class="container" style="padding-top:7%;">
+   <div class="row" >
+                <form class="container" action="testlogin.php" method="post" style="color:white;">
+               
+                  <h2>Login </h2><hr> 
+               
+                 <div class="row">
+                  <div class="col-lg-5">
+                        <div class="form-group">
+                                <label for="username" >First Name:</label>
+                                <input type="text" class="form-control" id='username' name='username' maxlength="50" placeholder="Username">
+                        </div>
+                        
+                  </div>
+                  <br>
+                  <div class="col-lg-5">
+                        <div class="form-group">
+                                <label for="password">Password:</label>
+                                <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                        </div>
+                  </div>
+                  <div>
+                  <div class="row">
+                   <div class="col-lg-6">
+                  		<div class="form-group">
+                  			<input type="radio" name="type"   value="admin">Admin</div></div>
+                  		<div class="col-lg-6">
+                  			<div class="form-group">
+								<input type="radio" name="type"  value="user">User</div></div>
+                  </div>
+                  
+                  
+                        	<input type="checkbox" name="checkbox" class="form-control"/>
+								<label >Remember me</label>
+                        </div>
+                 </div>
+                  </br><input type="submit" name="Submit" value="Log in" class="btn btn-info"/><hr>
+       
+ 
+  </div>
+</div>
+ 
+ 
+  </div>
+ 
+ 
+  <script>
+    $(document).ready(function() {
+      $('#my_popup').popup();
+ 
+    });
+  </script>
+		   <script>
+	  	function nightVision(){
+		  document.body.style.backgroundColor = "grey";
+		  document.body.style.color = "darkgrey";
+		  
+			document.getElementById("navid").className = "navbar fixed-top navbar-expand-lg bg-dark navbar-dark";
+		  
+		}
+		function morningVision(){
+		  document.body.style.backgroundColor = "white";
+		  document.body.style.color = "black";
+		  
+			document.getElementById("navid").className = "navbar fixed-top navbar-expand-lg bg-light navbar-light";
+		  
+		}
+	  </script>
+	  <img onClick="nightVision();" src="night.png" class="img-responsive rounded-circle" alt="train" width="30" height="30">
+	<img onClick="morningVision();" src="sun.png" class="img-responsive rounded-circle" alt="train" width="40" height="40">
+      </form>
+		
+  </div>
+</nav>
+	  
+<img src="horse1.jpg" height="550px" width="100%" class="img-responsive">
+<div class="container-fluid">
+<p><h3>About us</h3>
+Lazzaz Horse Riding Club is a Saudi based club bringing together like-minded equine enthusiasts of all levels for fun social and riding events.
+We offer a wide variety of riding for members including weekly lessons, weekends away, holidays and unique member only riding experiences from side saddle to advanced dressage training. We also have a very active social calendar. Meeting people with similar interests and making new friends is one of the major benefits of becoming a Riding Club member!</p>
+<hr>
+<h3>Our Services</h3>
+<div class="row">
+<div class="col-sm-2">
+<img onclick="description()" src="train.jpg" class="img-responsive rounded-circle" alt="train" width="60" height="60">
+</div>
+<div class="col-sm-4">
+<p><h5>Training Horses</h5></p>
+<p id="p1"></p>
+</div>
+<div class="col-sm-2"><img onclick="description2()" src="train.jpg" class="img-responsive rounded-circle" alt="train" width="60" height="60">
+</div>
+<div class="col-sm-4">
+<p><h5>Training Members</h5></p>
+<p id="p2"></p>
+</div>
+</div>
+<br>
+<div class="row">
+<div class="col-sm-2"><img onclick="description3()" src="train.jpg" class="img-responsive rounded-circle" alt="train" width="60" height="60">
+</div>
+<div class="col-sm-4">
+<p><h5>Horses Veteran</h5></p>
+<p id="p3"></p>
+</div>
+<div class="col-sm-2"><img onclick="description4()" src="train.jpg" class="img-responsive rounded-circle" alt="train" width="60" height="60">
+</div>
+<div class="col-sm-4">
+<p><h5>Horse Breeding</h5></p>
+<p id="p4"></p>
+</div>
+</div>
+<br>
+<div class="row">
+<div class="col-sm-2"><img onclick="description5()" src="train.jpg" class="img-responsive rounded-circle" alt="train" width="60" height="60">
+</div>
+<div class="col-sm-4">
+<p><h5>Stall Rentings</h5></p>
+<p id="p5"></p>
+</div>
+<div class="col-sm-2"><img onclick="description6()" src="train.jpg" class="img-responsive rounded-circle" alt="train" width="60" height="60">
+</div>
+<div class="col-sm-4">
+<p><h5>Competitions</h5></p>
+<p id="p6"></p>
+</div>
+</div>
+<br>
+</div>
+
+<script>
+function description() { 
+				document.getElementById("p1").innerHTML="Lazzaz can train your horse to become faster and to join competitions. We have horse trainers occupied only to fully train your horses. <br> Price:1200SAR per month ";
+				}
+				function description2() { 
+				document.getElementById("p2").innerHTML="Lazzaz can train you to professionally ride a horse and even to join competitions. We have members trainers occupied only to fully train you. <br> Price:2500SAR per month ";
+				}
+		function description3() { 
+				document.getElementById("p3").innerHTML="Your horse is sick? Just get it to Lazzaz. Our doctors are always willing to help<br>Price: depends one horse condition";
+				}
+				function description4() { 
+				document.getElementById("p4").innerHTML="Time to breed your horse? Lazzaz is here to help your horse breed with the finest horses <br> Price: 1000SAR";
+				}
+function description5() { 
+				document.getElementById("p5").innerHTML="If you want your horse to enjoy a luxurious stall, then Lazzaz is the perfect choice<br>Price:500SAR per month";
+				}
+				function description6() { 
+				document.getElementById("p6").innerHTML="We hold many competitions on monthly basis. Contact us for more deatils";
+				}				
+</script>
+
+
+
+<footer style="text-align: center;">
+<hr>
+<a href="https://www.instagram.com/lazzaz_stud/" target="_blank"><img src="insta.png" class="img-responsive rounded-circle" alt="train" width="50" height="50"></a>
+Lazzaz_stud
+  </footer>
+
+	    
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	  </div>
+</body>
+</html>

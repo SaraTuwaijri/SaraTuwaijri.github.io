@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	 
+	  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Our horses</title>
+	  <style>
+		  
+	  </style>
+	  <script>
+	  	function nightVision(){
+		  document.body.style.backgroundColor = "grey";
+		  document.body.style.color = "white";
+		  
+			document.getElementById("navid").className = "navbar fixed-top navbar-expand-lg bg-dark navbar-dark";
+		  
+		}
+	  </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
+  <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
+
+	  
+  </head>
+  <body style="padding-top: 10%">
+	  <div class="container-fluid">
+<nav class="navbar fixed-top navbar-expand-lg bg-light navbar-light" id="navid">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+		<img src="LAZZAZLogo.jpg" alt="Placeholder image" width="99" height="1" class="img-fluid navbar-brand rounded-circle">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item "> <a class="nav-link" href="index.php">Home<span class="sr-only"></span></a></li>
+        
+		
+		  <li class="nav-item"> <a class="nav-link" href="aboutus11.html">About us</a> </li>
+	
+		 <li class="nav-item"> <a class="nav-link" href="memberships.html">Memberships</a> </li>
+		  <li class="nav-item active"> <a class="nav-link" href="ourhourses.html">Our horses</a> </li>
+	 
+<li class="nav-item "> <a class="nav-link" href="contactus11.html"> Contact us </a>
+        
+        </li>
+      </ul>
+      
+<button class="btn btn-outline-success my_popup_open" type="submit">Log in</button> &nbsp 
+		     <div id="my_popup">
+ 
+   <div class="container" >
+   <div class="row" >
+                <form class="container" action="testlogin.php" method="post" style="color:white;">
+               
+                  <h2>Login </h2><hr> 
+               
+                 <div class="row">
+                  <div class="col-lg-5">
+                        <div class="form-group">
+                                <label for="username" >First Name:</label>
+                                <input type="text" class="form-control" id='username' name='username' maxlength="50" placeholder="Username">
+                        </div>
+                        
+                  </div>
+                  <br>
+                  <div class="col-lg-5">
+                        <div class="form-group">
+                                <label for="password">Password:</label>
+                                <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                        </div>
+                  </div>
+                  <div>
+                  <div class="row">
+                   <div class="col-lg-6">
+                  		<div class="form-group">
+                  			<input type="radio" name="type"   value="admin">Admin</div></div>
+                  		<div class="col-lg-6">
+                  			<div class="form-group">
+								<input type="radio" name="type"  value="user">User</div></div>
+                  </div>
+                  
+                  
+                        	<input type="checkbox" name="checkbox" class="form-control"/>
+								<label >Remember me</label>
+                        </div>
+                 </div>
+                  </br><input type="submit" name="Submit" value="Log in" class="btn btn-info"/><hr>
+       
+ 
+  </div>
+</div>
+ 
+ 
+  </div>
+ 
+ 
+  <script>
+    $(document).ready(function() {
+      $('#my_popup').popup();
+ 
+    });
+  </script>
+		   <script>
+	  	function nightVision(){
+		  document.body.style.backgroundColor = "grey";
+		  document.body.style.color = "darkgrey";
+		  
+			document.getElementById("navid").className = "navbar fixed-top navbar-expand-lg bg-dark navbar-dark";
+		  
+		}
+		function morningVision(){
+		  document.body.style.backgroundColor = "white";
+		  document.body.style.color = "black";
+		  
+			document.getElementById("navid").className = "navbar fixed-top navbar-expand-lg bg-light navbar-light";
+		  
+		}
+	  </script>
+	  <img onClick="nightVision();" src="night.png" class="img-responsive rounded-circle" alt="train" width="30" height="30">
+	<img onClick="morningVision();" src="sun.png" class="img-responsive rounded-circle" alt="train" width="40" height="40">
+      </form>
+		
+  </div>
+</nav>
+<!--end of nav bar-->
+		  
+ <div class="container-fluid">
+	<div class="container-fluid">
+	  <ul id="clothingnav1" class="nav nav-tabs" role="tablist">
+	    <li class="nav-item"> <a class="nav-link active" href="#tab1"  role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Arabian horses</a> </li>
+	    <li class="nav-item"> <a class="nav-link" href="#tab2" role="tab"  data-toggle="tab" aria-controls="hats">Spanish horses</a> </li>
+	    <!-- Dropdown -->
+	    <li class="nav-item"> <a class="nav-link" href="#tab3" role="tab"  data-toggle="tab" aria-controls="hats">English horses</a> </li>
+      </ul>
+	  <!-- Content Panel -->
+	  <div class="tab-content">
+		<!--TAB1-->
+	    <div role="tabpanel" class="tab-pane fade show active" id="tab1" >
+		<!--ROW1-->
+	      <div class="row">
+			 <!--col1-->
+    		<div class="col-sm-6">
+			<!--CARD1-->
+			  <div class="card col-md-4 col-lg-12"> <img class="card-img-top" src="horse.jpg" alt="Card image cap">
+			    <div class="card-body">
+			      <h5 class="card-title">Card title</h5>
+			      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+</div>
+		      </div>
+            </div>
+			  <!--col2-->
+   			 <div class="col-sm-6">
+			  <!--CARD2-->
+				 <div class="card col-md-4 col-lg-12"> <img class="card-img-top" src="horse2.jpg" alt="Card image cap">
+			    <div class="card-body">
+			      <h5 class="card-title">Card title</h5>
+			      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+</div>
+		      </div>
+				 
+			 </div>
+		</div><hr>
+		<!--ROW2-->
+        </div>
+		 <!--TAB2-->
+	    <div role="tabpanel" class="tab-pane fade" id="tab2" >
+          <div role="tabpanel" class="tab-pane fade show active" id="tab1" >
+				<!--ROW1-->
+	      <div class="row">
+			 <!--col1-->
+    		<div class="col-sm-6">
+			<!--CARD1-->
+			  <div class="card col-md-4 col-lg-12"> <img class="card-img-top" src="horse3.jpg" alt="Card image cap">
+			    <div class="card-body">
+			      <h5 class="card-title">Card title</h5>
+			      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+</div>
+		      </div>
+            </div>
+			  <!--col2-->
+   			 <div class="col-sm-6">
+			  <!--CARD2-->
+				 <div class="card col-md-4 col-lg-12"> <img class="card-img-top" src="horse4.jpg" alt="Card image cap">
+			    <div class="card-body">
+			      <h5 class="card-title">Card title</h5>
+			      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+</div>
+		      </div>
+				 
+			 </div>
+		</div><hr>
+			   <!--ROW2-->
+        </div>
+        </div>
+		 <!--TAB3-->
+	    <div role="tabpanel" class="tab-pane fade" id="tab3" >
+	      <!--ROW1-->
+	      <div class="row">
+			 <!--col1-->
+    		<div class="col-sm-6">
+			<!--CARD1-->
+			  <div class="card col-md-4 col-lg-12"> <img class="card-img-top" src="horse5.jpg" alt="Card image cap">
+			    <div class="card-body">
+			      <h5 class="card-title">Card title</h5>
+			      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+</div>
+		      </div>
+            </div>
+			  <!--col2-->
+   			 <div class="col-sm-6">
+			  <!--CARD2-->
+				 <div class="card col-md-4 col-lg-12"> <img class="card-img-top" src="horse6.jpg" alt="Card image cap">
+			    <div class="card-body">
+			      <h5 class="card-title">Card title</h5>
+			      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+</div>
+		      </div>
+				 
+			 </div>
+		</div><hr>
+        </div>
+	    
+      </div>
+    </div>
+<footer style="text-align: center;">
+<hr>
+<a href="https://www.instagram.com/lazzaz_stud/" target="_blank"><img src="insta.png" class="img-responsive rounded-circle" alt="train" width="50" height="50"></a>
+Lazzaz_stud
+  </footer>
+
+	    
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	  </div>
+</body>
+</html>

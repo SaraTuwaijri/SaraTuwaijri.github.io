@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap - Prebuilt Layout</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	
+	<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+	
+  </head>
+  
+  <body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" >
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+		<img src="lazzazlogo.jpg" alt="Placeholder image" width="99" height="1" class="img-fluid navbar-brand rounded-circle">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active"> <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a></li>
+        
+		  <!--This is a dropdown-->
+		  <li class="nav-item"> <a class="nav-link" href="aboutus.html">About us</a> </li>
+		  
+		 
+        <li class="nav-item"> <a class="nav-link" href="ourservices.html">Our Services</a> </li>
+		 <li class="nav-item"> <a class="nav-link" href="memberships.html">Memberships</a> </li>
+		  <li class="nav-item"> <a class="nav-link" href="#card2">Our horses</a> </li>
+	 
+<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Contact us </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown2"> <a class="dropdown-item" href="#">FAQs</a> <a class="dropdown-item" href="#">Location</a>
+         <a class="dropdown-item" href="#">Email us</a> </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log in</button>
+      </form>
+  </div>
+</nav>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent1"> <img src="lazzazlogo.jpg" alt="Placeholder image" width="99" height="1" class="img-fluid navbar-brand rounded-circle">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active"> <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a></li>
+        <!--This is a dropdown-->
+        <li class="nav-item"> <a class="nav-link" href="#card2">About us</a></li>
+        <li class="nav-item"> <a class="nav-link" href="#card2">Our Services</a></li>
+        <li class="nav-item"> <a class="nav-link" href="#card2">Memberships</a></li>
+        <li class="nav-item"> <a class="nav-link" href="#card2">Our horses</a></li>
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Contact us </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown2"> <a class="dropdown-item" href="#">FAQs</a> <a class="dropdown-item" href="#">Location</a> <a class="dropdown-item" href="#">Email us</a></div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log in</button>
+      </form>
+    </div>
+  </nav>
+
+  
+  
+  <div class="container" style="padding-top:7.3%">
+   <div class="row" >
+ 
+		<form name="myForm" onsubmit="return validateForm()" class="container" action="database.php" method="post" id="form" >
+		<script>
+		function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+  var y = document.forms["myForm"]["lname"].value;
+    if (x == "" || y=="") {
+        alert("Full Name must be filled out");
+        return false;
+    }
+}
+</script>
+
+		  <h2>Registration form</h2><hr>
+		
+		 <div class="row">
+		  <div class="col-lg-5">
+			<div class="form-group">
+				<label for="fname">First Name:</label>
+				<input type="text" class="form-control" id="fname" name="fname" >
+			</div>
+		  </div>
+		  
+		  <div class="col-lg-5">
+			<div class="form-group">
+				<label for="lname">Last Name:</label>
+				<input type="text" class="form-control" id="lname" name="lname">
+			</div>
+		  </div>
+		 </div>
+		 
+		  
+		 <div class="row">
+		  <div class="form-group col-lg-4">
+			<label for="nat">Nationality:</label>
+			<input type="text" class="form-control" id="nat" name="nat">
+		  </div>
+		  
+		 <div class="col-lg-4">
+		  <div class="form-group">
+			<label for="birthday">Date of Birth:</label>
+			<input type="date" class="form-control" id="birthday" placeholder="DD/MM/YY" name="birthday">
+		  </div>
+		 </div>
+		 
+		 <div class="radio col-lg-2">
+			<label for="sex">Sex:</label></br>
+			<label><input type="radio" name="sex" value="F"> Female &nbsp </label>
+			<label><input type="radio" name="sex" value="M"> Male </label>
+		  </div>
+		 </div>
+		  
+		  <div class="row">
+		  <div class="form-group col-lg-10">
+		    <label for="email">Email:</label>
+			<input type="email" class="form-control" id="email" placeholder="example@gmail.com" name="email" required>
+          </div>
+		  </div>
+		  
+		  <div class="row">
+		  <div class="form-group col-lg-6">
+		    <label for="phone">Phone number:</label>
+			<input type="text" class="form-control" id="phone" placeholder="+966 599 999 999" name="phone">
+		  </div>
+		  
+		  <div class="form-group col-lg-4">
+			<label for="regtype">Type of registration:</label></br>
+			<input type="text" class="form-control" id="regtype" name="regtype">
+		  </div>
+		  </div>
+		  
+		  <div class="radio">
+			<p>Is it your first time?</p>
+            <label><input type="radio" name="first" value="yes"> Yes &nbsp </label>
+			<label><input type="radio" name="first" value="no"> No </label>
+		  </div>
+		  
+		  </br><button type="submit" class="btn btn-info">Submit Registration</button><hr>
+	
+		</form>
+  
+  </div>
+</div>
+
+  
+
+
+<ul class="pagination" style="padding-left: 7%;">
+  <li class="previous"><a class="page-link" href="memberships.html">Previous</a></li>
+</ul>
+
+  
+  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
